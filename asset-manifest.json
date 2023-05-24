@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FilmStar/static/css/main.14554cbd.css",
+    "main.js": "/FilmStar/static/js/main.ed20805d.js",
+    "index.html": "/FilmStar/index.html",
+    "main.14554cbd.css.map": "/FilmStar/static/css/main.14554cbd.css.map",
+    "main.ed20805d.js.map": "/FilmStar/static/js/main.ed20805d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14554cbd.css",
+    "static/js/main.ed20805d.js"
+  ]
+}
