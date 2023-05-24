@@ -1,0 +1,15 @@
+
+
+.css-wjsjww-MuiChip-label {
+    color: white;
+}
+.contain{
+    padding:20px 0 10px;
+    color:white
+}
+
+@media (max-width:1000px) {
+    .media {
+        padding:0;
+    }
+}
