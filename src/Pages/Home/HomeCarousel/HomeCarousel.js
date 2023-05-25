@@ -14,10 +14,8 @@ const HomeCarousel = ({name, genre}) => {
 
     const fetchData = async() => {
         const response = await fetch(
-            `https://api.themoviedb.org/3/discover/movie/?api_key=9d226837169e45a79056a5040bd49c77&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate&page=${page}&with_genres=${genre}`,
-            {
-                mode: 'no-cors'
-           }
+            `https://api.themoviedb.org/3/discover/movie/?api_key=9d226837169e45a79056a5040bd49c77&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate&page=${page}&with_genres=${genre}`
+            
         )
         console.log(response)
         const data = await response.json();
