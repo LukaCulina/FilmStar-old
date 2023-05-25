@@ -3,21 +3,6 @@ import { useEffect, useState } from "react";
 import './Home.css'
 import HomeCarousel from './HomeCarousel/HomeCarousel';
 
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: '90%',
-  height: '80%',
-  bgcolor: '#39445a',
-  border: '2px solid #000',
-  borderRadius: 5,
-  boxShadow: 24,
-  p: 4,
-  color:'white',
-};
-
 export default function Home() {
   const [genres, setGenres] = useState([]);
   

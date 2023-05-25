@@ -10,7 +10,7 @@ const handleDragStart = (e) => e.preventDefault();
 
 const HomeCarousel = ({name, genre}) => {
     const [content, setContent] = useState([]);
-    const [page, setPage] = useState(1);
+    const [page] = useState(1);
 
     const fetchData = async() => {
         const response = await fetch(

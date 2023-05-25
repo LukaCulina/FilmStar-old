@@ -26,29 +26,29 @@ const Movies = () =>{
         console.log(response);
         const data = await response.json();
         const approved = data.results;
-        if(broj == 1){
+        if(broj === 1){
             setContent(approved);
-        } else if(broj == 2){
+        } else if(broj === 2){
             const dobar = approved.sort((a, b) => (b.vote_average) - (a.vote_average))
             console.log(dobar)
             setContent(dobar)
-        } else if(broj == 3){
+        } else if(broj === 3){
             const dobar = approved.sort((a, b) => (a.vote_average) - (b.vote_average))
             console.log(dobar)
             setContent(dobar)
-        } else if(broj == 4){
+        } else if(broj === 4){
             const bolji = approved.sort((a, b) => a.title.localeCompare(b.title))
             console.log(bolji)
             setContent(bolji)
-        } else if(broj == 5){
+        } else if(broj === 5){
             const bolji = approved.sort((a, b) => b.title.localeCompare(a.title))
             console.log(bolji)
             setContent(bolji)
-        } else if(broj == 6){
+        } else if(broj === 6){
             const najbolji = approved.sort((a, b) => new Date(b.release_date) - new Date(a.release_date))
             
             setContent(najbolji)
-        } else if(broj == 7){
+        } else if(broj === 7){
             const najbolji = approved.sort((a, b) => new Date(a.release_date) - new Date(b.release_date))
             
             setContent(najbolji)
@@ -60,7 +60,7 @@ const Movies = () =>{
     };  
 
     const setNumber=(broj)=>{
-        if(broj == 1){
+        if(broj === 1){
             setBroj(2)
         } else if(broj == 2){
             setBroj(3)
@@ -70,7 +70,7 @@ const Movies = () =>{
     }
 
     const setNumber2=(broj)=>{
-        if(broj == 1){
+        if(broj === 1){
             setBroj(4)
         } else if(broj==4){
             setBroj(5)
@@ -80,9 +80,9 @@ const Movies = () =>{
     }
 
      const setNumber3=(broj)=>{
-        if(broj == 1){
+        if(broj === 1){
             setBroj(6)
-        } else if(broj == 6){
+        } else if(broj === 6){
             setBroj(7)
         } else{
             setBroj(1)
@@ -101,7 +101,7 @@ const Movies = () =>{
         const data = await response.json();
         console.log(data)
         console.log(response)
-        data.length !=0 ? setContent(data.results):setContent(0)
+        data.length !==0 ? setContent(data.results):setContent(0)
         setnumOfPages(data.total_pages);
     };  
     const ref = useRef(null);
