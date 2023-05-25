@@ -16,15 +16,19 @@ export default function SimpleBottomNavigation() {
     React.useEffect(() => {
         if(value === 0){
             navigate("/");
+            window.scroll(0, 0);
         } 
         else if(value === 1) {
             navigate("/trending");
+            window.scroll(0, 0);
         }
         else if(value === 2) {
             navigate("/movies");
+            window.scroll(0, 0);
         }
         else if(value === 3) {
             navigate("/series");
+            window.scroll(0, 0);
         }
         /* else if(value === 4) {
             navigate("/search");
