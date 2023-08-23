@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { HashRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import Header from "./components/Header"
 import SimpleBottomNavigation from './components/MainNav';
@@ -10,7 +10,7 @@ import Home from './Pages/Home/Home';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header></Header>
       <div className="app">
       <Container>
@@ -24,7 +24,7 @@ function App() {
       </Container>
       </div>
       <SimpleBottomNavigation />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
