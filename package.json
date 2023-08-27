@@ -1,7 +1,7 @@
 {
   "name": "filmstar",
   "version": "0.1.0",
-  "homepage": "https://LukaCulina.github.io/FilmStar",
+  "homepage": "https://LukaCulina.github.io/FilmStar-old",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.0",
